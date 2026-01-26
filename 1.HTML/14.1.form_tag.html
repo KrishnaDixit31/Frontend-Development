@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HTML Form Tag</title>
+  </head>
+  <body>
+    <h1>HTML <span style="color: red">Form</span> Tag</h1>
+    <form>
+      <div>
+        <label for="username">Username</label>
+        <input type="text" id="username" required />
+      </div>
+      <br />
+      <div>
+        <label for="email">Enter Your Email</label>
+        <input type="email" id="email" />
+      </div>
+      <br />
+      <div>
+        <label for="textarea">Message</label>
+        <textarea
+          name=""
+          id="textarea"
+          col="1"
+          row="1"
+          placeholder="Enter your comment"
+        ></textarea>
+      </div>
+      <br />
+      <input type="submit" value="Submit" />
+      <button type="submit">Submit</button>
+      <br /><br />
+      <div>
+        <label for="pass">Enter Password</label>
+        <input type="password" name="pass" placeholder="Enter your password" />
+      </div>
+      <br />
+      <div>
+        <label for="num">Enter Number</label>
+        <input type="number" name="num" />
+      </div>
+      <br />
+      <div>
+        <label for="gender">Gender</label>
+        <input type="radio" name="gender" value="male" />Male
+        <input type="radio" name="gender" value="female" />Female
+      </div>
+      <br />
+      <div>
+        <label for="check">Favourite Hobbies :</label>
+        <input type="checkbox" name="check" value="dance" />Dance
+        <input type="checkbox" name="check" value="music" />Music
+      </div>
+      <br />
+      <div>
+        <label for="country">Your country: </label>
+        <select name="country" name="country">
+          <option value="USA">USA</option>
+          <option value="India">India</option>
+          <option valve="China">China</option>
+        </select>
+      </div>
+      <br />
+      <div>
+        <label for="country"> Select Your Country: </label>
+        <input type="text" id="country" name="country" list="countries" />
+        <datalist id="countries">
+          <option value="USA">USA</option>
+          <option value="India">India</option>
+          <option valve="China">China</option>
+        </datalist>
+      </div>
+      <br />
+      <div>
+        <label for="file">upload file here</label>
+        <input type="file" name="fileupload" />
+      </div>
+    </form>
+  </body>
+</html>
