@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astrology-App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            height: 100hv;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(86, 185, 243);
+            color: white;
+        }
+
+        .container {
+            width: 30vw;
+            height: 100%;
+            margin: auto;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: rgb(119, 41, 245);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #astroForm {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        label {
+            align-items: flex-start;
+            font-size: 1.2rem;
+            margin-bottom: 6px;
+        }
+
+        input {
+            height: 2rem;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            padding: 0.3rem 0.8rem;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            height: 3rem;
+            margin: auto;
+            border: none;
+            border-radius: 5px;
+            background: #50c1e9;
+            color: #fff;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .result {
+            margin-top: 1.5rem;
+            font-size: 1.2rem;
+            background: rgb(143, 78, 247);
+            padding: 1rem;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Astrology Insights</h1>
+        <form id="astroForm">
+            <label for="name">First Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="surname">Surname:</label>
+            <input type="text" id="surname" name="surname" required>
+
+            <label for="day">Date of Birth (Day):</label>
+            <input type="number" id="day" name="day" min="1" max="31" required>
+
+            <label for="month">Date of Birth (Month):</label>
+            <input type="number" id="month" name="month" min="1" max="12" required>
+
+            <label for="year">Date of Birth (Year):</label>
+            <input type="number" id="year" name="year" min="1900" max="2025" required>
+
+            <input type="submit" value="Get Insights">
+        </form>
+        <div class="result" id="result"></div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>

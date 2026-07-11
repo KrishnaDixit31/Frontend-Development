@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Oswald", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: #b9daeb;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100vw;
+  height: auto;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+header {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  place-content: end;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-two--cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.hero-heading {
+  padding: 2rem;
+  font-size: 2rem;
+}
+
+.hero-menu {
+  display: inline-block;
+  display: flex;
+  justify-content: flex-end;
+  padding: 4rem;
+}
+
+.navbar {
+  width: 250px;
+  background-color: rgb(251, 253, 252);
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+  padding-right: 5rem;
+  transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  transition: all 0.3s ease;
+  z-index: 0;
+}
+.navbar li {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  text-decoration: none;
+  text-transform: capitalize;
+  padding: 3rem;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(8, 8, 8);
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+#menu:checked ~ .navbar {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+}
+
+#menu:checked + .icon::before {
+  position: absolute;
+  top: -49%;
+  left: 27%;
+  content: "\2716";
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#menu:not(:checked) + .icon::after {
+  position: absolute;
+  top: -60%;
+  left: 20%;
+  content: "\2630";
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#menu {
+  position: absolute;
+  opacity: 0;
+  width: 20px;
+  height: 20px;
+  padding: 3rem;
+  cursor: pointer;
+  z-index: 15;
+}
+.icon {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  z-index: 16;
+}
+
+/*? media queries */
+
+@media (width <= 540px) {
+  html {
+    font-size: 40%;
+  }
+
+  .navbar {
+    width: 200px;
+  }
+}

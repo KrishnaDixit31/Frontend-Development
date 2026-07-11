@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text float</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Jost:wght@300;400;500;700&family=Poppins:wght@200;300;400;600&family=Quicksand:wght@300;400;500;600;700&family=Urbanist:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Bungee Spice", cursive;
+        }
+        body{
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            background-color: antiquewhite;
+        }
+        h1{
+            font-size: 48px;
+            font-weight: bold;
+            text-shadow: -3px 10px 10px rgba(249, 141, 141, 0.2);
+            text-transform: uppercase;
+            text-align: center;
+            animation: textfloating 1s linear alternate infinite;
+        }
+
+        @keyframes textfloating {
+            0%{
+                rotate: 15deg;
+            }
+            50%{
+                rotate: 0deg;
+            }
+            100%{
+                rotate: -15deg;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Wed <br> Developer</h1>
+</body>
+</html>

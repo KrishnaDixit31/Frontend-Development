@@ -1,0 +1,24 @@
+/* font-family: "Roboto", sans-serif;
+font-family: "Oswald", sans-serif; */
+html {
+  font-family: "Roboto", sans-serif;
+}
+body {
+  padding: 0.5rem;
+}
+#main-heading {
+  padding: 4rem 0;
+  color: #1e1403;
+}
+p {
+  line-height: 1.5;
+  letter-spacing: 1px;
+  font-size: 18px;
+  text-shadow: 2ox 2px 5px rgb(0, 0, 0, 0.3);
+}
+.padding-section {
+  background: linear-gradient(to right, #3a7bd4, #00d2ff);
+  color: #fff;
+  border: 10px solid #003b99;
+  padding: 50px;
+}

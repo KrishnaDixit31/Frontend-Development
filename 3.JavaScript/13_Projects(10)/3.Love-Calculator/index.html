@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love-Calculator</title>
+    <style>
+        body{
+            background-color: #222;
+            color: rgb(102, 0, 255);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 2rem;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+         label{
+            display: block;
+            text-align: left;
+            margin-bottom: 0.5rem;
+         }
+         input{
+            margin-bottom: 1rem;
+            height:2rem;
+            outline:none;
+            border: none;
+            font-size: 1.5rem;
+            padding-inline: 1rem ;
+            border-radius: 2rem;
+         }
+        button {
+            display: inline-block;
+            width: 200px;
+            height: 50px;
+            font-size: 1.5rem;
+            background-color: rgb(102, 0, 255);
+            border: 2px solid rgb(250, 252, 253);
+            color: white;
+            border-radius: 2rem;
+            margin: 2rem auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <h1>Love Calculator</h1>
+        <form>
+            <label for="boy">Boy Name:- </label>
+            <input type="text" id="boy" name="Boy" required>
+            <label for="girl">Girl Name:- </label>
+            <input type="text"id="girl" name="Girl" required>
+            <button type="submit">Calculate</button>
+        </form>
+        <h2>Result: </h2>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>

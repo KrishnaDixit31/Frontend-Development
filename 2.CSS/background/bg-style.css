@@ -1,0 +1,11 @@
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: hsl(0, 0%, 94%);
+  background-image: url("/images/mustang-wallpaper.jpg"),
+    url(/images/2a0797046757029d961f00f3bf353229.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /* background-position: top left; */
+  background-blend-mode: soft-light;
+}

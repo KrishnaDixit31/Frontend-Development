@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project 1</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        height: 100vh;
+        background-color: #fef6e4;
+
+        /* 1st method */
+        /* position: relative; */
+
+        /* 2nd method */
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+
+        /* 3rd method */
+        /* display: grid;
+        justify-content: center;
+        align-items: center; */
+
+        /* 4th method */
+        /* display: grid;
+        place-items: center; */
+
+        /* 5th method */
+        display: flex;
+      }
+      .child {
+        width: 200px;
+        height: 200px;
+        background-color: #8bd3dd;
+        color: #2e01f9;
+        text-transform: uppercase;
+        font-size: 20px;
+
+        /* 1st method */
+        /* position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); */
+
+        /* 5th method */
+        margin: auto;
+
+        /* text at center */
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+        
+        display: grid;
+        place-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="child">Hello World</div>
+  </body>
+</html>

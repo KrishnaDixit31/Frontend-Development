@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 50px;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body{
+    text-transform: capitalize;
+}
+
+.content-1 ul p{
+    font-weight: bold;
+    color: red;
+}
+
+.content-1 ul li{
+    color: green;
+}
+
+.content-1 > ul > li{
+    color: rgb(238, 137, 4);
+}
+
+.content-1 ul p + li{
+    color: rgb(252, 78, 136);
+}
+
+.content-1 ul p ~ li{
+    color: blue;
+}

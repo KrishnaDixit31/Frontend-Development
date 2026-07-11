@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+section {
+  width: 100%;
+  height: 100vh;
+  /* background-image: linear-gradient(red, yellow); */
+  /* background-image: linear-gradient(to right,red, yellow); */
+  /* background-image: linear-gradient(45deg ,red, yellow); */
+  /* background-image: linear-gradient(
+    to top right,
+    rgb(0, 89, 255),
+    rgb(0, 255, 166),
+    rgb(0, 255, 34),
+    rgb(255, 230, 0)
+  ); */
+  /* background-image: repeating-linear-gradient(45deg, #d2e0fb,#79ac78 50px); */
+
+  background-image: linear-gradient(
+      45deg,
+      rgba(0, 89, 255, 0.9),
+      rgba(0, 255, 166, 0.9),
+      rgba(0, 255, 34, 0.9),
+      rgba(255, 230, 0, 0.09)
+    ),
+    url(/images/mustang-wallpaper.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}

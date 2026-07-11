@@ -1,0 +1,16 @@
+h1 {
+  color: rgb(255, 0, 0);
+}
+.para {
+  color: #0000ff;
+}
+#article {
+  color: hsl(455, 64%, 45%);
+}
+h1 {
+  color: rgb(255, 0, 0, 0.5);
+}
+#footer{
+    /*  color:rgb(255, 0, 0,0) */
+    color:transparent;
+}

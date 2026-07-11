@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Positions-static in CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      html {
+        font-family: "Oswald", sans-serif;
+        scroll-behavior: smooth;
+      }
+
+      body {
+        padding: 5rem 10rem;
+      }
+
+      .main-heading {
+        color: #1e1403;
+        text-align: left;
+        margin-bottom: 30px;
+      }
+
+      .parent-div {
+        width: 1000px;
+        height: 700px;
+        color: #fff;
+        background: linear-gradient(to right, #776892, #24c6dc);
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+      }
+
+      .child {
+        width: 150px;
+        height: 120px;
+        background: linear-gradient(to right, #02f7d2, #04d1ec);
+        box-shadow: 0px 7px 29px 0px rgba(114, 107, 107, 0.1);
+        border-radius: 5px;
+        display: grid;
+        place-items: center;
+        font-size: 32px;
+        color: #003180;
+      }
+
+      .parent-div{
+        position: relative;
+      }
+
+      .child-2{
+        position: static;
+        left: 50%;
+        margin-left: 50%;
+      }
+
+      .child-3{
+        position: absolute;
+        /* left: 50%; */
+        /* margin-left: 50%; */
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="main-heading">CSS Positions</h1>
+    <section class="parent-div">
+      <div class="child child-1">child 1</div>
+      <div class="child child-2">child 2</div>
+      <div class="child child-3">child 3</div>
+      <div class="child child-4">child 4</div>
+      <div class="child child-5">child 5</div>
+    </section>
+  </body>
+</html>

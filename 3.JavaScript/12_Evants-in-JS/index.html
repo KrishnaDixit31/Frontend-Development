@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events in JS</title>
+    <style>
+        .child,#parent,#grandpa,#parents{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body style="background-color: black; color: white; ">
+    <h1 id="first" onclick="handclick()">Hello Coder Army</h1>
+    <h2 id="second" style="background-color:rgb(250, 73, 232)">Hello Coder Army</h2>
+    <h3 id="third" style="background-color:rgb(102, 73, 250)">Hello Coder Army</h3>
+
+    <div id="parent">
+        <div id="child1" class="child" style="height: 150px; width: 150px; background-color: rgb(255, 0, 0);">First</div>
+        <div id="child2" class="child" style="height: 150px; width: 150px; background-color: rgb(0, 64, 255);">Second</div>
+        <div id="child3" class="child" style="height: 150px; width: 150px; background-color: rgb(0, 254, 4);">Third</div>
+        <div id="child4" class="child" style="height: 150px; width: 150px; background-color: rgb(0, 157, 255);">Fourth</div>
+        <div id="child5" class="child" style="height: 150px; width: 150px; background-color: rgb(255, 0, 247);">Fifth</div>
+    </div>
+
+    <div id="grandpa" style="height: 300px; width: 300px; background-color: orange;">
+        <div id="parents" style="height: 200px; width: 200px; background-color: red;">
+            <div id="child" style="height: 100px; width: 100px; background-color: aqua;"></div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

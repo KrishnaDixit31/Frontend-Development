@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>neon-loader</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            background-color: #191825;
+        }
+
+        .loader {
+            width: 20rem;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            background-color: aliceblue;
+            position: relative;
+            animation: loading 1s linear infinite reverse;
+        }
+
+        @keyframes loading {
+            100% {
+                rotate: 360deg;
+            }
+        }
+
+        .loader::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 17rem;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            background-color: #191825;
+        }
+
+        .loader::after {
+            content: "";
+            position: absolute;
+            left: 40%;
+            top: -10%;
+            width: 5rem;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            background-color: aliceblue;
+            box-shadow: 0 0 1rem aliceblue, 0 0 1.5rem aliceblue, 0 0 2rem aliceblue,
+                0 0 2.5rem aliceblue, 0 0 3rem aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="loader"></div>
+</body>
+
+</html>

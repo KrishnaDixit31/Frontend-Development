@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+}
+
+.container {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.section-about,
+.section-testimonial {
+  width: 100vw;
+  height: 500px;
+  text-align: center;
+  background-color: #000;
+  padding: 3rem;
+}
+
+/* .hero-section,
+.section-services {
+  width: 100vw;
+  height: 500px;
+  text-align: center;
+  background-color: #fff;
+  padding: 3rem;
+} */
+:where(.hero-section, .section-services) {
+  width: 100vw;
+  height: 500px;
+  text-align: center;
+  background-color: #fff;
+  padding: 3rem;
+}
+
+/* .section-about h1,
+.section-about p,
+.section-testimonial h1,
+.section-testimonial p {
+  color: #fff;
+} */
+:is(.section-about, .section-testimonial) :is(h1, p) {
+  color: pink;
+}
+:is(.hero-section, .section-about, .section-services, .section-testimonial) p {
+  padding-top: 100px;
+}
+
+.parent:has([type="checkbox"]:checked) label{
+  color: red;
+}
+input[type="checkbox"] {
+  accent-color: pink;
+  width: 30px;
+  aspect-ratio: 1;
+}
+
+.container {
+  & h1 {
+    font-size: 50px;
+  }
+
+  & p, label {
+    font-size: 30px;
+  }
+}
+
+p,
+label {
+  font-size: 20px;
+}
+
+header {
+  padding: 3.6rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: end;
+}
+
+nav ul li {
+  font-size: 20px;
+  list-style: none;
+  border: 2px solid red;
+}
+
+ul li:not(li:first-child){
+  padding-left: 20px;
+}
