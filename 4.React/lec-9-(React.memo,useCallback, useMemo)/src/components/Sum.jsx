@@ -1,0 +1,25 @@
+import React from "react";
+
+const Sum = React.memo(({ number }) => {
+  function calculateSum() {
+    let sum = 0;
+    for (let i = 0; i <= number; i++) {
+      sum += i;
+    }
+    return sum;
+  }
+
+  const total = calculateSum();
+
+  console.log("Sum render");
+
+  return (
+    <>
+      <h2>
+        Sum of first {number} Natural number is: {total}
+      </h2>
+    </>
+  );
+});
+
+export default Sum;

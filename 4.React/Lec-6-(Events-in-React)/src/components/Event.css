@@ -1,0 +1,40 @@
+.main-div {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grandparent-div {
+  width: 500px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+}
+
+.parent-div {
+  width: 300px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: orange;
+}
+
+button {
+  font-size: 1.4rem;
+  border: none;
+  padding: 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+  cursor: pointer;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}

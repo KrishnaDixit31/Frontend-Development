@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif, serif;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+}
+
+p,
+a,
+li {
+  font-size: 1.4rem;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 400;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.grid {
+  display: grid;
+  gap: 5rem;
+}
+
+.grid-two--cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-three--cols {
+  grid-template-columns: repeat(3, 1fr);
+}
